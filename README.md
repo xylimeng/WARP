@@ -10,7 +10,7 @@ Wavelets with adaptive recursive partitioning applied to image reconstruction (b
   
 # 2D example
 
-The following code is available in the file `Demo.m`. It usually takes 20sec if runs in a Macbook Pro with usual specifications. 
+The following code is available in the file `Demo.m`. It usually takes 20sec if ran in a Macbook Pro with usual specifications, which increases by 1min if the step size in cycling spinning (`step`) is changed to 5.  
 
 ```
 
@@ -33,7 +33,7 @@ BMA_no_cs = treeFit(obs, dimension, hyper0, 0);
 BMA_no_cs = reshape(BMA_no_cs, dimension'); 
 t2 = toc;
 % BMA with cycle spinning;
-step = 1;
+step = 1; % increase `step` will lead to better performance (smaller MSEs) but takes longer time. 
 BMA_cs = treeFit(obs, dimension, hyper0, step);
 BMA_cs = reshape(BMA_cs, dimension'); 
 t3 = toc;
