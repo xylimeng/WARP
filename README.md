@@ -1,5 +1,5 @@
 # WARP
-Wavelets with adaptive recursive partitioning (Matlab) applied to image reconstruction (both 2D and 3D). 
+Wavelets with adaptive recursive partitioning applied to image reconstruction (both 2D and 3D). Matlab can directly use the code for real data analysis. The C++ source code is also available, which is portable to`R` via `RcppArmadillo`. 
 
 # Instructions
 - If you use mac system, you are ready to run examples. 
