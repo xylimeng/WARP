@@ -52,7 +52,7 @@ imshow(BMA_cs);
 title(sprintf('WARPed Haar with %d shifts \n MSE = %.4f | Time = %.1fs', (2 * step + 1)^2, MSE(BMA_cs), t3 - t2 + t1));
 ```
 
-Although we do not recommend, if you'd like to use a full optimization to select hyperparameters rather than the default setting, use the following code to obtain `hyper0`.
+Although we do not recommend it, if you'd like to use a full optimization to select hyperparameters rather than the default method implemented in `hyper_default`, use the following code to obtain `hyper0`.
 
 ```
 idx = (1:2:numel(obs));
