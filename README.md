@@ -1,5 +1,5 @@
 # WARP
-Wavelets with adaptive recursive partitioning (Matlab) 
+Wavelets with adaptive recursive partitioning (Matlab) applied to image reconstruction (both 2D and 3D). 
 
 # Instructions
 - If you use mac system, you are ready to run examples. 
