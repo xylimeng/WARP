@@ -1,4 +1,4 @@
-function x = hyper_3D_default(obs, dimension, prunning)
+function x = hyper_default(obs, dimension, prunning)
 
 if nargin == 2
     prunning = true; 
