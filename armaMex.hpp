@@ -13,7 +13,7 @@
 // Version 0.5
 
 
-#include </usr/local/include/armadillo>
+#include <armadillo>
 #include <mex.h>
 #include <mat.h>
 #include <cstring>

@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <math.h>
-#include </usr/local/include/armadillo>
+#include <armadillo>
 
 using namespace std;
 using namespace arma;

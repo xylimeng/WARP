@@ -2,12 +2,10 @@
 Wavelets with adaptive recursive partitioning applied to image reconstruction (both 2D and 3D). Matlab users can directly use the code for real data analysis. The C++ source code is also available, which is portable to`R` via `RcppArmadillo`. 
 
 # Instructions
-- Mac users are ready to run examples. 
-- For non-mac users:
-  - Install the c++ library `armadillo` to your computer; 
-  - Update the three header files `armaMex.hpp`, `helper.hpp`, `tree_class.hpp` by changing `#include </usr/local/include/armadillo>` to the directory of `armadillo`
-  - Run the file `mex_this.m` to compile the c++ code for Matlab. 
-  
+- Install the c++ library `armadillo`(http://arma.sourceforge.net) to your computer; 
+- Let `path` be the directory containing the header file of `armadillo`; 
+- Compile the c++ code for matlab by running the code `mex_this(path)`. 
+
 # 2D example
 
 The following code is available in the file `Demo.m`. It usually takes 20sec if ran in a Macbook Pro with usual specifications, which increases by 1min if the step size in cycling spinning (`step`) is changed to 5.  
