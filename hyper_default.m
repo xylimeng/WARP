@@ -26,8 +26,8 @@ n_value = [3, 3, 1, numel(eta_list)];
 n_grid = prod(n_value); 
 
 % last_tau = repmat(2.^(-5:5), 1, n_grid/n_value(1)); 
-last_tau = 1/(sigma_hat^2) .* repmat((1:3)./10, 1, n_grid/n_value(1)); 
-last_rho = repmat((1:3)./10, 1, n_grid/n_value(2)); 
+last_tau = 1/(sigma_hat^2) .* repelem((1:3)./10, 1, n_grid/n_value(1)); 
+last_rho = repmat(repelem((1:3)./10,1,n_grid/n_value(1)/n_value(2)), 1, n_value(1)); 
 beta = 1; 
 alpha = repmat([0.5], 1, n_grid/n_value(3)) ; 
 eta = repmat(eta_list, 1, n_grid/n_value(4));  
